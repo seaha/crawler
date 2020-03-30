@@ -13,7 +13,7 @@ def load_data():
     str_data = data.decode('utf-8')
     print(str_data)
     # 将数据写入文件
-    with open('baidu.html','w', encoding='utf-8') as f:
+    with open('01-baidu.html','w', encoding='utf-8') as f:
         f.write(str_data)
 
 load_data()
