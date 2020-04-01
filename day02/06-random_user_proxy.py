@@ -14,9 +14,8 @@ def proxy_user():
         proxy_handler = urllib.request.ProxyHandler(proxy)
         opener = urllib.request.build_opener(proxy_handler)
         try:
-            response = opener.open(url, timeout=1)
-            data = response.read()
-            print(data)
+            opener.open(url, timeout=1)
+            print('haha')
         except Exception as e:
             print(e)
 
